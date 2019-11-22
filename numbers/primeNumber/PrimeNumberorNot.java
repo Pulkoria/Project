@@ -1,0 +1,22 @@
+package programmes.numbers.primeNumber;
+
+public class PrimeNumberorNot {
+	public static void main(String args[]) {
+	 int num = 29;
+	 
+	 boolean flag = false;
+	for( int i = 2; i <= num/2; ++i ) {
+		 if (num % i == 0) {
+			 flag=true;
+			 break;
+			 
+		 }
+	 }
+	if(!flag) {
+		 System.out.printf("PrimeNmber:"+num);
+	}
+	else {
+		 System.out.printf("PrimeNmberNot:"+num);
+	}
+	 }
+}
